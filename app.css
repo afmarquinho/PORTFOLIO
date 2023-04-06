@@ -117,6 +117,7 @@ img {
     top: 5rem;
     right: 5rem;
     padding: 0 4rem;
+    opacity: 100%;
   }
   .botones,
   .home {
@@ -164,57 +165,93 @@ img {
     width: 20vw;
     height: 20vw;
     left: calc(100vw - 85vw);
+    top: 12rem;
   }
 }
-.make{
+.make {
   color: var(--amarillo);
 }
 .info__personal__contenedor {
   position: absolute;
-  /* height: 25vh; */
   top: calc(100vh - 50vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
+}
 
+@media (min-width: 769px) {
+  .info__personal__contenedor {
+    background-color: var(--gris);
+    left: 10vw;
+    top: 65vh;
+    padding: 2rem;
+  }
 }
 .mi_nombre {
   font-size: 2.1em;
   color: var(--amarillo);
   font-weight: 800;
 }
-.front{
-font-weight: 900;
-font-size: 1.9rem;
+.front {
+  font-weight: 900;
+  font-size: 1.9rem;
 }
-.make__happen{
+.make__happen {
   margin-bottom: 1.6rem;
 }
 
-.botones2{
+.botones2 {
+  width: 100vw;
   position: absolute;
   top: calc(100vh - 20vh);
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-around;
 }
-.contact{
-background-color: var(--amarillo);
-color: white;
-border: none;
-border-radius: 2rem;
-height: 3rem;
-width: 12rem;
-margin-right: 1rem;
-font-weight: 900;
+@media (min-width: 769px) {
+  .botones2{
+    width:50vw;
+    left:45vw
+  }  
 }
-.more__info{
+
+.contact {
+  background-color: var(--amarillo);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  height: 4rem;
+  width: 14rem;
+  margin-right: 1rem;
+  font-weight: 900;
+}
+.more__info {
   background-color: white;
   border: none;
   border-radius: 2rem;
-  height: 3rem;
-  width: 12rem;
+  height: 4rem;
+  width: 14rem;
   margin-left: 1rem;
   font-weight: 900;
+}
+.do__for__you__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#doForU{
+  color: var(--amarillo);
+  font-weight: 900;
+}
+@media (min-width: 769px) {
+  .do__for__you__container {
+    position: absolute;
+    font-size: 2.1rem;
+    padding: 2rem;
+    width: 50vw;
+    bottom:30vh;
+    left:35vw;
   }
+  
+}
