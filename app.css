@@ -93,6 +93,7 @@ img {
   position: absolute;
   right: -100%;
   z-index: 100;
+  opacity: 0%;
 }
 .link {
   display: block;
@@ -126,27 +127,26 @@ img {
     margin: 0 2rem;
   }
 }
-.menu {
-  position: fixed;
-  right: 3rem;
-  top: 4rem;
-  z-index: 1;
-}
+
 @media (min-width: 769px) {
   .menu {
     display: none;
   }
 }
 .btn__menu {
+  position: fixed;
+  right: 3rem;
+  top: 4rem;
   background-color: transparent;
   border: none;
   padding: 0;
-  z-index: 1000;
+  z-index: 200;
 }
 
 .activado {
   right: 0;
   transition: all 0.7s ease-out;
+  opacity:100%;
 }
 
 .imagen {
