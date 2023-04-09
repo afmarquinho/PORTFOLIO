@@ -82,27 +82,6 @@ body {
   }
 }
 
-/* .body__container {
-  background: linear-gradient(
-    to bottom,
-    var(--gris__suave) 30%,
-    var(--gris) 30%
-  );
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-} */
-
-/* @media (min-width: 815px) {
-  .body__container {
-    background: linear-gradient(
-      to right,
-      var(--gris__suave) 25%,
-      var(--gris) 25%
-    );
-  }
-} */
-
 /* BARRA DE NAVEGACION */
 .nav {
   width: 20rem;
@@ -113,6 +92,9 @@ body {
   position: absolute;
   z-index: 100;
   opacity: 0%;
+}
+.i__am, .i__do{
+  margin-right: 2rem;
 }
 .link {
   display: block;
@@ -153,6 +135,9 @@ body {
   }
   .link {
     margin: 0 2rem;
+  }
+  .i__am, .i__do{
+    display:none;
   }
 }
 
@@ -223,7 +208,7 @@ body {
     background-color: var(--gris);
     width: 25vw;
     left: 12.5vw;
-    top: 50rem;
+    top: 45rem;
     padding: 2rem;
   }
 }
@@ -270,7 +255,7 @@ body {
 .botones2 {
   width: 100vw;
   position: absolute;
-  top: 80vh;
+  top: 93vh;
   display: flex;
   justify-content: space-around;
 }
@@ -287,8 +272,8 @@ body {
   color: white;
   border: none;
   border-radius: 2rem;
-  height: 4rem;
-  width: 14rem;
+  height: 3rem;
+  width: 12rem;
   margin-right: 1rem;
   font-weight: 900;
   transition: all 0.3s ease-in-out
@@ -297,8 +282,8 @@ body {
   background-color: white;
   border: none;
   border-radius: 2rem;
-  height: 4rem;
-  width: 14rem;
+  height: 3rem;
+  width: 12rem;
   margin-left: 1rem;
   font-weight: 900;
   transition: all 0.3s ease-in-out
@@ -313,4 +298,10 @@ body {
   background-color: var(--amarillo);
   color: white;
   cursor: pointer;
+}
+@media (min-width: 815px) {
+  .contact, .more__info{
+    height: 4rem;
+  width: 14rem;
+  }
 }

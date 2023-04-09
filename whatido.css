@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Inter:wght@400;800&display=swap");
+
+:root {
+  --gris: #2d2b2b;
+  --amarillo: #eab224;
+  --gris__suave: #76736b;
+  --fuentePrincipal: "Inter", sans-serif;
+  --fuenteSecundaria: "Alkatra", cursive;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 900;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+  margin: 0.5rem auto;
+}
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0 auto 1rem auto;
+}
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+p {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* UTLIDADES */
+.text__center {
+  text-align: center;
+}
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+body {
+  background: linear-gradient(
+    to bottom,
+    var(--gris__suave) 17%,
+    var(--gris) 17%
+  );
+  height: 100vh;
+  width: auto;
+}
+@media (min-width: 815px) {
+  body {
+    background: linear-gradient(
+      to right,
+      var(--gris__suave) 20%,
+      var(--gris) 20%
+    );
+  }
+} /* BARRA DE NAVEGACION */
+.nav {
+  width: 20rem;
+  height: 100vh;
+  background-color: var(--amarillo);
+  padding-right: 3rem;
+  padding-top: 10rem;
+  position: absolute;
+  z-index: 100;
+  opacity: 0%;
+}
+.i__am,
+.i__do {
+  margin-right: 2rem;
+}
+.link {
+  display: block;
+  color: black;
+  margin-bottom: 2rem;
+  text-align: right;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+}
+.btn__download {
+  color: white;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: white;
+}
+.btn__download:hover {
+  color: black;
+}
+@media (min-width: 815px) {
+  .nav {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    height: 40vh;
+    width: 15vw;
+    max-width: 120rem;
+    bottom: 10vh;
+    left: 3.5vw;
+    padding: 0;
+    opacity: 100%;
+  }
+  .botones,
+  .home {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  .link {
+    margin: 0.5rem 2rem;
+    padding: 0.6rem 0 0.6rem 0;
+    color: white;
+    transition: 500ms all ease-in-out;
+  }
+  .link:hover {
+    color: black;
+    padding-left: 1rem;
+    border-left: 1rem solid var(--amarillo);
+  }
+  .i__am,
+  .i__do {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+.btn__menu {
+  position: fixed;
+  right: 3rem;
+  top: 4rem;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 200;
+}
+
+.activado {
+  right: 0;
+  transition: all 0.5s ease-out;
+  opacity: 100%;
+}
+
+/* FIN BARRA DE NAVEGACION */
+/* ASIDE*/
+aside {
+  display: none;
+}
+
+@media (min-width: 815px) {
+  aside {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+  .imagen {
+    background-image: url(./assets/pexels-photo-3211476.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 15rem;
+    max-width: 20vw;
+    height: 15rem;
+    margin: 0 auto;
+  }
+  .mi_nombre {
+    font-size: 2rem;
+    color: var(--amarillo);
+    font-weight: 900;
+  }
+  .front {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 900;
+  }
+  .redes__sociales {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+}
+
+/* FIN ASIDE*/
+/* MAIN */
+main{
+    margin-top: 4.7rem;
+}
+/* .content, .content2{
+    margin: 0 1.5rem;
+} */
+.about__me {
+  color: var(--amarillo);
+  border-bottom: 0.1rem solid var(--amarillo);
+}
+.subtitle {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.who,
+.what {
+  width: 20%;
+  color: white;
+  transition: all 300ms ease;
+}
+.what {
+  border-bottom: 0.3rem solid var(--amarillo);
+}
+.who:hover,
+.what:hover {
+  cursor: pointer;
+  border-bottom: 0.3rem solid var(--amarillo);
+}
+.iconos{
+  width: 8rem;
+}
+
+@media (min-width: 815px) {
+  main {
+    margin-left: 25vw;
+    position: absolute;
+    top: 0;
+  }
+  .subtitle {
+    padding: 1rem 7rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .iconos{
+    width: 15rem;
+  }
+}
+/* FIN DEL MAIN */
