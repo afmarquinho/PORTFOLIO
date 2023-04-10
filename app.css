@@ -167,7 +167,7 @@ body {
 /* IMAGEN */
 
 .imagen {
-  background-image: url(./assets/pexels-photo-3211476.webp);
+  background-image: url(./assets/IMG_1234\ \(2\).WEBP);
   background-position: center;
   background-size: cover;
   width: 20rem;
@@ -228,7 +228,9 @@ body {
 .make__happen {
   margin-bottom: 1.6rem;
 }
-
+.profession{
+  font-style: italic;
+}
 .do__for__you__container {
   display: flex;
   flex-direction: column;
