@@ -90,6 +90,8 @@ body {
   position: absolute;
   z-index: 100;
   opacity: 0%;
+  top:0;
+  right:0;
 }
 .i__am,
 .i__do {
@@ -122,12 +124,12 @@ body {
     align-items: start;
     justify-content: space-around;
     height: 40vh;
-    width: 15vw;
+    width: 20vw;
     max-width: 120rem;
-    bottom: 10vh;
-    left: 3.5vw;
     padding: 0;
     opacity: 100%;
+    top: 30rem;
+    left: 3.5vw;
   }
   .botones,
   .home {

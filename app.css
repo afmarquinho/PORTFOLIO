@@ -93,7 +93,8 @@ body {
   z-index: 100;
   opacity: 0%;
 }
-.i__am, .i__do{
+.i__am,
+.i__do {
   margin-right: 2rem;
 }
 .link {
@@ -136,8 +137,9 @@ body {
   .link {
     margin: 0 2rem;
   }
-  .i__am, .i__do{
-    display:none;
+  .i__am,
+  .i__do {
+    display: none;
   }
 }
 
@@ -241,15 +243,12 @@ body {
     width: 50vw;
     bottom: 30rem;
     left: 25vw;
-    
   }
 }
 #doForU {
   color: var(--amarillo);
   font-weight: 900;
 }
-
-
 
 /* BOTONES */
 .botones2 {
@@ -258,13 +257,6 @@ body {
   top: 93vh;
   display: flex;
   justify-content: space-around;
-}
-@media (min-width: 815px) {
-  .botones2 {
-    width: 40vw;
-    left: 42vw;
-    top:70vh;
-  }
 }
 
 .contact {
@@ -276,7 +268,7 @@ body {
   width: 12rem;
   margin-right: 1rem;
   font-weight: 900;
-  transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out;
 }
 .more__info {
   background-color: white;
@@ -286,22 +278,44 @@ body {
   width: 12rem;
   margin-left: 1rem;
   font-weight: 900;
-  transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out;
 }
-
-.contact:hover{
-  color: black;
+.contact__a{
+  transition: all 0.3s ease-in-out;
+}
+.more__info__a{
+  color:black;
+  transition: all 0.3s ease-in-out;
+}
+.contact:hover {
   cursor: pointer;
   background-color: white;
 }
-.more__info:hover{
+.contact:hover .contact__a{
+  color: black;
+}
+.more__info:hover {
   background-color: var(--amarillo);
-  color: white;
   cursor: pointer;
 }
+.more__info:hover .more__info__a{
+color: white;
+}
 @media (min-width: 815px) {
-  .contact, .more__info{
+  .botones2 {
+    width: 40vw;
+    left: 42vw;
+    top: 70vh;
+  }
+  .contact,
+  .more__info {
     height: 4rem;
-  width: 14rem;
+    width: 14rem;
+  }
+  .contact a {
+    color: white;
+  }
+  .contact:hover .contact__a {
+    color: black;
   }
 }
