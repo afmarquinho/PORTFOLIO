@@ -251,9 +251,11 @@ main{
 .iconos{
   width: 8rem;
 }
-.content__container{
+.content__container, .skills{
   color:white;
+  margin: 0 1.5rem;
 }
+
 
 @media (min-width: 815px) {
   main {

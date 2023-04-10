@@ -221,10 +221,11 @@ main {
   margin-top: 4.7rem;
   color: white;
 }
-.content,
-.content2 {
+.content__container{
   margin: 0 1.5rem;
+
 }
+
 .contact__me {
   color: var(--amarillo);
   border-bottom: 0.1rem solid var(--amarillo);
