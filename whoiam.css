@@ -224,6 +224,8 @@ main{
 .about__me {
   color: var(--amarillo);
   border-bottom: 0.1rem solid var(--amarillo);
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 .subtitle {
   padding: 1rem 1rem;

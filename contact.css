@@ -90,8 +90,8 @@ body {
   position: absolute;
   z-index: 100;
   opacity: 0%;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
 }
 .i__am,
 .i__do {
@@ -215,18 +215,36 @@ aside {
 
 /* FIN ASIDE*/
 /* MAIN*/
-main{
-    margin-top: 4.7rem;
+main {
+  margin-top: 4.7rem;
+  color: white;
 }
-.content, .content2{
-    margin: 0 1.5rem;
+.content,
+.content2 {
+  margin: 0 1.5rem;
 }
 .contact__me {
   color: var(--amarillo);
   border-bottom: 0.1rem solid var(--amarillo);
+  font-size: 4rem;
 }
-
-
+.tel {
+  color: var(--amarillo);
+  text-decoration: underline;
+}
+.email,
+.telephone {
+  display: inline-block;
+}
+.redes__sociales2{
+  display: flex;
+  flex-flow: row wrap;
+  gap:2rem;
+}
+.icono{
+  width: 4rem;
+  height: 4rem;
+}
 
 @media (min-width: 815px) {
   main {
