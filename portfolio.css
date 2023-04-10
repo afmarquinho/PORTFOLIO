@@ -92,6 +92,7 @@ body {
   opacity: 0%;
   top: 0;
   right: 0;
+  display: none;
 }
 .i__am,
 .i__do {
@@ -171,6 +172,7 @@ body {
   right: 0;
   transition: all 0.5s ease-out;
   opacity: 100%;
+  display: block;
 }
 
 /* FIN BARRA DE NAVEGACION */
