@@ -95,20 +95,32 @@
 }
 .circle{
   position: relative;
+  height: 10rem; /* Establece una altura para el contenedor */
+  width: 10rem; /* Establece una anchura para el contenedor */
+  display: flex; /* Agrega display flex para centrar en ambos ejes */
+  justify-content: center;
+  align-items: center;
 }
 .inside-circle {
+  position: absolute;
+  background-color: var(--gris);
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
   text-align: center;
+  padding: auto;
+
+  /* ;
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  background-color: red;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 
 }
 /* .inside-circle{
