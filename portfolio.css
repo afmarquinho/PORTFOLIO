@@ -232,7 +232,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .flip-card {
@@ -247,7 +247,7 @@ main {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 1s;
   transform-style: preserve-3d;
 }
 
@@ -261,9 +261,7 @@ main {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: aqua;
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .flip-card-front img {
@@ -309,5 +307,32 @@ main {
     position: absolute;
     top: 0;
   }
+}
+.imagen__proyecto{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.imagen1{
+  background-image: url(./assets/Proyectos/tasky.PNG);
+}
+.imagen2{
+  background-image: url(./assets/Proyectos/crud-ecommerce.PNG);
+}
+.imagen3{
+  background-image: url(./assets/Proyectos/encriptador.PNG);
+}
+.imagen4{
+  background-image: url(./assets/Proyectos/farmacol.PNG);
+}
+.imagen5{
+  background-image: url(./assets/Proyectos/form-validator.PNG);
+}
+ul{
+  text-align: left;
 }
 /* FIN DEL MAIN */

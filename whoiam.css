@@ -221,7 +221,8 @@ main {
   margin-top: 4.7rem;
 }
 .content,
-.content2 {
+.content2,
+.languages__container {
   margin: 0 1.5rem;
 }
 .about__me {

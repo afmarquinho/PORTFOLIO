@@ -6,21 +6,24 @@
   --fuenteSecundaria: "Alkatra", cursive;
 }
 /* BARRAS CIRULARES */
-.all {
+
+.all{
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
 }
+
 @media (min-width: 768px) {
   .all {
     flex-direction: row;
   }
+  .languages__container{
+    position: absolute;
+    right: 15rem;
+    top:40rem;
+  }
 }
 .circular-wrap {
-  display: grid;
-  grid-template-columns: repeat(1, 15rem);
-  grid-gap: 80px;
-  margin-top: 100px;
-  margin-left: 50px;
+  margin: 1rem;
   width: 10rem;
   height: 10rem;
   background-color: white;
@@ -93,7 +96,7 @@
     transform: rotate(81deg);
   }
 }
-.circle{
+.circle {
   position: relative;
   height: 10rem; /* Establece una altura para el contenedor */
   width: 10rem; /* Establece una anchura para el contenedor */
@@ -108,34 +111,11 @@
   width: 8rem;
   height: 8rem;
   font-size: 1.5rem;
-  font-weight: bold;
   color: white;
   text-align: center;
-  padding: auto;
-
-  /* ;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* .inside-circle{
-  width: 124px;
-  height: 124px;
-  border-radius: 50%;
-  background-color: var(--gris);
-  line-height: 120px;
-  position: absolute;
-  margin-top: 13px;
-  margin-left: 13px;
-  z-index: 100;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-} */
+
 /* FIN BARRAS CIRCULARES */

@@ -272,4 +272,53 @@ main{
     width: 15rem;
   }
 }
+/* SKILLS */
+.skills{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "icono1 icono2"
+  "icono3 icono4"
+  "icono5 icono6"
+  "icono7 .";
+  justify-content: center;
+  
+
+}
+.iconos{
+  width: 8rem;
+  height: 8rem;
+}
+.icono1{
+grid-area: icono1;
+}
+.icono2{
+  grid-area: icono2;
+}
+.icono3{
+  grid-area: icono3;
+}
+.icono4{
+  grid-area: icono4;
+}
+.icono5{
+  grid-area: icono5;
+}
+.icono6{
+  grid-area: icono6;
+}
+.icono7{
+  grid-area: icono7;
+}
+@media (min-width: 815px) {
+  .skills{
+    grid-template-areas:
+    "icono1 icono2 icono3"
+    "icono4 icono5 icono6"
+    ". icono7 ."
+  }
+  
+}
+/* FIN SKILLS */
 /* FIN DEL MAIN */
