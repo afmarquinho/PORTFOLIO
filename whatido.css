@@ -273,6 +273,9 @@ main{
   }
 }
 /* SKILLS */
+.myskills{
+  color:var(--amarillo)
+}
 .skills{
   
   display: grid;
@@ -282,9 +285,13 @@ main{
   "icono3 icono4"
   "icono5 icono6"
   "icono7 .";
-  justify-content: center;
+  justify-items: center;
+}
+@media (min-width: 815px) {
+  .skills{
+    justify-items: start;
+  }
   
-
 }
 .iconos{
   width: 8rem;
